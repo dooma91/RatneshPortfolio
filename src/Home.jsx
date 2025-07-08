@@ -16,21 +16,21 @@ const Home = () => {
           <nav className="w-full">
             <ul className="flex justify-center space-x-8 font-medium">
               <li>
-                <a
-                  href="#home"
-                  className="hover:text-orange-400 hover:underline"
-                >
+                <a href="#" className="hover:text-orange-400 hover:underline">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 hover:underline">
+                <a
+                  href="#service"
+                  className="hover:text-orange-400 hover:underline"
+                >
                   Service
                 </a>
               </li>
               <li>
                 <a
-                  href="#home"
+                  href="#about"
                   className="hover:text-orange-400 hover:underline"
                 >
                   About
@@ -38,8 +38,9 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="#home"
-                  className="hover:text-orange-400 hover:underline"
+                  href="https://mail.google.com"
+                  target="_blank"
+                  className="hover:text-orange-400 hover:underline" //mail.google.com" target="_blank"
                 >
                   Contact
                 </a>
@@ -95,26 +96,25 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center bg-gray-800 text-white w-full p-6 rounded-lg shadow-md">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="font-bold text-3xl mb-3">Meet My Recent Clients</h1>
-            <p className="text-lg">
-              As a PWD contractor, my clients value quality, trust, and timely
-              delivery. <br />
-              From infrastructure projects to road repairs, I ensure every
-              project meets high standards and exceeds expectations.
+            <p className="text-gray-300 mb-4">
+              As a PWD contractor, I deliver quality projects with trust and
+              timeliness. <br />
+              From road repairs to infrastructure, I exceed client expectations.
             </p>
           </div>
           <div className="flex justify-center lg:justify-start space-x-8 mt-4 lg:mt-0">
             <a href="#">
-              <div className="client-name hover:text-orange-400 cursor-pointer transition-colors duration-300">
+              <div className="client-name hover:text-orange-400 cursor-pointer transition-colors duration-300 font-semibold">
                 City Roads Corporation
               </div>
             </a>
             <a href="#">
-              <div className="client-name hover:text-orange-400 cursor-pointer transition-colors duration-300">
+              <div className="client-name hover:text-orange-400 cursor-pointer transition-colors duration-300 font-semibold">
                 Skyline Builders
               </div>
             </a>
             <a href="#">
-              <div className="client-name hover:text-orange-400 cursor-pointer transition-colors duration-300">
+              <div className="client-name hover:text-orange-400 cursor-pointer transition-colors duration-300 font-semibold">
                 Horizon Civil Works
               </div>
             </a>
@@ -123,7 +123,10 @@ const Home = () => {
       </div>
 
       {/* Services Section */}
-      <div className="flex flex-col lg:flex-row justify-center items-center mt-8 px-6 lg:px-20 pb-16">
+      <div
+        id="service"
+        className="flex flex-col lg:flex-row justify-center items-center mt-8 px-6 lg:px-20 pb-16"
+      >
         <div className="flex-1 max-w-2xl text-center lg:text-left lg:mr-8">
           <p className="text-orange-400 text-left mb-2">Best Services</p>
           <h1 className="text-3xl font-bold mb-4">What Can I Do For You?</h1>
@@ -195,7 +198,7 @@ const Home = () => {
       </div>
 
       {/* Skills & Experiences Section */}
-      <div className="bg-gray-800 py-16 px-6 text-center text-white">
+      <div id="about" className="bg-gray-800 py-16 px-6 text-center text-white">
         <h1 className="font-medium text-orange-400">SKILLS/EXPERIENCES</h1>
         <h1 className="text-4xl font-bold mb-4 pt-5">
           Check My Skills And Work Experiences
@@ -212,7 +215,9 @@ const Home = () => {
         {/* Skills & Experiences Grid */}
         <div className="flex flex-col lg:flex-row justify-center items-center mt-8">
           <div className="flex-1 max-w-2xl text-center lg:text-left lg:mr-8">
-            <h1 className="text-3xl font-bold mb-4 text-white">Skills</h1>
+            <h1 className="text-3xl font-bold mb-4 text-white text-center">
+              Skills
+            </h1>
             <p className="text-gray-300 mb-8 text-center">
               With years of hands-on experience, I have developed a strong skill
               set in construction, project management, and client relations,
